@@ -1,0 +1,237 @@
+/* J'applique une couleur de fond à mon body et je retire les marges */
+body {
+
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0D0D0F;
+}
+
+/* j'applique une couleur de fond, de l'ombre, une bordure et je dispo les elements en flexbox */
+header {
+  background-color: #18181B;
+  border-bottom: 1px solid black;
+  box-shadow: 1px 1px 3px black;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+
+/* -------------------------------- */
+/* Je le redimensionne et je le décale avec flex-box*/
+.containerlogonav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 33%;
+}
+/* Je modifie la taille du logo et sa position */
+img.logo {
+  width: 45px;
+  padding-left: 1em;
+  margin-bottom: -3px;
+}
+/* -------------------------------- */
+
+
+
+
+
+/* -------------------------------- */
+/* Je retirer les puces, je flex et j'espace les 3 mots */
+ul {
+  list-style-type: none;
+  display: flex;
+}
+li {
+ margin-right: 25px;
+}
+/* J'applique un peu d'ombre pour le contraste,
+une police, de la couleur, et je retire la décoration de base
+vu que ce sont des liens */
+nav a {
+  text-shadow: 1px 1px black;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+/* quand on passer sa souris sur les textes
+ça fait du violet */
+nav a:hover {
+  color: #A970FF
+}
+/* -------------------------------- */
+
+
+
+
+
+/* -------------------------------- */
+/* Couleur de fond sur mon input
+j'arrondie a gauche et j'applique une
+bordur identique a ma couleur de fond
+et je met une transition*/
+.search {
+  background-color: #464649;
+  border: 2px solid #464649;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: all ease 0.5s;
+  height: 35px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding-left: 1em;
+}
+/* Quand je passe ma souris ça change la
+couleur de la bordure */
+.search:hover {
+  border: 2px solid gray;
+}
+.search:focus {
+  border: 2px solid #A970FF;
+  outline: none;
+}
+/* Je règle la taille de ma loupe et sa couleur puis je met une couleur uniforme
+sur le border et background*/
+i {
+  color: white;
+
+}
+i:hover {
+  background-color: rgb(58, 58, 61);
+}
+/* je regle sa taille + position et j'arrondie les bordures à droite et je met une couleur uniforme
+sur les border et background et je cale une transi*/
+.loupe {
+  margin: 1px;
+  width: 35px;
+  height: 35px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgb(70, 70, 73);
+  border: 1px solid rgb(70, 70, 73);
+
+}
+.loupe:hover {
+  background-color: rgb(58, 58, 61);
+  border: 1px solid rgb(58, 58, 61);
+  cursor: pointer;
+}
+/* Je décale ma barre de recherche */
+.container_search {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* -------------------------------- */
+
+
+/* ------------------------------------- */
+/* je décale mon login*/
+.container_login {
+  width: 33%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3em;
+}
+/* J'applique un filtre blanc et une taille à mon SVG */
+.bars_solid {
+  width: 25px;
+  padding: 5px;
+  fill: white;
+  border-radius: 4px;
+  transition: all ease 0.5s;
+}
+.bars_solid:hover {
+  background-color: rgb(58, 58, 61);
+  cursor: pointer;
+}
+/* ------------------------------------- */
+
+
+
+/* ------------------------------------- */
+
+/* je repositionne et je décore avec un peu d'ombre*/
+.container_twitch_integration {
+  margin-top: 60px;
+  box-shadow: 1px 1px 3px black;
+}
+/* ------------------------------------- */
+
+
+
+
+/* ------------------------------------- */
+/* Formulaire */
+.container_section {
+  background-color: #0D0D0F;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container_formulaire {
+  background-color: #18181B;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 5px;
+
+}
+
+.form_input, textarea {
+  margin-bottom: 10px;
+  padding-left: 1em;
+
+}
+
+
+.form_input {
+  width: 30%
+}
+
+input[type="mail"] {
+  width: 70%;
+}
+.submit {
+  width: 20%;
+}
+
+.colorinput {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: rgb(70, 70, 73);
+  border: 1px solid rgb(70, 70, 73);
+}
+
+.colorinput:hover {
+  border: 2px solid gray;
+  color: #A970FF;
+}
+.colorinput:focus {
+  border: 2px solid #A970FF;
+  outline: none;
+}
+
+h2 {
+  margin-top: -5px;
+  color: #A970FF;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+input[type="submit"]:hover {
+  color: #A970FF;
+}
+
+
+a.test:active {
+  color: red;
+}
